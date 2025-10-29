@@ -5,4 +5,4 @@ def test_subtraction():
     assert 5 - 2 == 3
 
 def test_failure_example():
-    assert 2 * 2 == 5  # This will fail
+    assert 2 * 2 == 4  # This will fail
