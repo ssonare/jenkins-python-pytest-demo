@@ -11,7 +11,7 @@ pipeline {
         
         stage('Run tests') {
             steps {
-                sh './venv/bin/pytest --junitxml=report.xml || true'
+                sh './venv/bin/pytest --junitxml=report.xml --cov=tests --cov-report=html --cov-report=term || true'
             }
         }
         
